@@ -153,8 +153,11 @@ display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
 }
-.list .link {
+.link-contact {
     margin-right: 50px;
+}
+.link-contact:last-child {
+    margin-right: 0px;
 }
 
 .link:hover,
@@ -164,9 +167,12 @@ display: flex;
     color: var(--link-text-color);
 }
 /*Hero*/
+.hero-section {
+
+}
 .hero {
     background-color: var(--background-footer);
-    text-align: center;
+    text-align: center;  
     padding: 200px 0;
 }
 
@@ -203,9 +209,11 @@ display: flex;
 
 /*Advantages*/
 .feature-section {
-    display: flex;
     padding-top: 94px;
     padding-bottom: 94px;
+}
+.advantages-list  {
+display: flex;
 }
 .feature-item {
     padding: 0px;
@@ -304,6 +312,7 @@ display: flex;
     padding: 0;
     margin-bottom: 20px;
     margin-top: 0px;
+    margin-right: 0;
 }
 
 .footer-studio {
@@ -405,8 +414,6 @@ align-items: flex-start;
     border: 1px;
     border: var(--list-background-color);
     border-bottom: 1px solid var(--list-background-color);
-    border-left: 1px solid var(--list-background-color);
-    border-right: 1px solid var(--list-background-color);
 }
 .portfolio-list:nth-child(3n) {
     margin-right: 0px;
@@ -425,6 +432,9 @@ margin-bottom: 0px;
 }
 .portfolio-inscription {
     padding: 20px 24px;
+    border-bottom: 1px solid var(--list-background-color);
+    border-right: 1px solid var(--list-background-color);
+    border-left: 1px solid var(--list-background-color);
 }
 .portfolio-title {
     color: var(--title-text-color);
